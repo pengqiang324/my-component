@@ -14,7 +14,6 @@ export default {
   },
 
   created() {
-    console.log('main 分支修改了')
     this.$toast('成功了')
   }
 }
