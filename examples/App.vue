@@ -16,7 +16,6 @@ export default {
   },
 
   created() {
-    console.log('我在dev分支修改了文件')
   }
 }
 </script>
