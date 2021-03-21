@@ -1,8 +1,10 @@
 {
-  "name": "my-component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pxy-components",
+  "version": "1.1.0",
+  "main": "packages/index.js",
+  "private": false,
   "scripts": {
+    "lib": "vue-cli-service build --target lib --name pengxinyu --dest lib packages/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -38,5 +40,15 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "新宇组件库",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "keywords": [
+    "ceshi"
+  ],
+  "author": "pengxinyu",
+  "license": "ISC"
 }
