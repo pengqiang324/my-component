@@ -16,6 +16,15 @@ export const siteData = {
   ],
   "pages": [
     {
+      "title": "关于我们",
+      "frontmatter": {},
+      "regularPath": "/about.html",
+      "relativePath": "about.md",
+      "key": "v-6c2ca5f2",
+      "path": "/about.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
+    },
+    {
       "title": "Hello VuePress",
       "frontmatter": {},
       "regularPath": "/",
@@ -33,44 +42,24 @@ export const siteData = {
           "title": "3级标题",
           "slug": "_3级标题"
         }
-      ]
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/bar/four.html",
-      "relativePath": "bar/four.md",
-      "key": "v-4808392d",
-      "path": "/bar/four.html"
-    },
-    {
-      "title": "关于我们",
-      "frontmatter": {},
-      "regularPath": "/about.html",
-      "relativePath": "about.md",
-      "key": "v-6c2ca5f2",
-      "path": "/about.html"
+      ],
+      "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
       "frontmatter": {},
       "regularPath": "/bar/",
       "relativePath": "bar/README.md",
       "key": "v-8a7399e4",
-      "path": "/bar/"
+      "path": "/bar/",
+      "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
       "frontmatter": {},
       "regularPath": "/bar/three.html",
       "relativePath": "bar/three.md",
       "key": "v-15e8eaf6",
-      "path": "/bar/three.html"
-    },
-    {
-      "title": "欢迎来到介绍页",
-      "frontmatter": {},
-      "regularPath": "/foo/",
-      "relativePath": "foo/README.md",
-      "key": "v-dcb768b0",
-      "path": "/foo/"
+      "path": "/bar/three.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
       "title": "介绍",
@@ -78,7 +67,8 @@ export const siteData = {
       "regularPath": "/contact.html",
       "relativePath": "contact.md",
       "key": "v-b3848adc",
-      "path": "/contact.html"
+      "path": "/contact.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
       "title": "这是介绍配置详情页面",
@@ -86,14 +76,33 @@ export const siteData = {
       "regularPath": "/foo/one.html",
       "relativePath": "foo/one.md",
       "key": "v-7d2b9536",
-      "path": "/foo/one.html"
+      "path": "/foo/one.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
       "frontmatter": {},
       "regularPath": "/foo/two.html",
       "relativePath": "foo/two.md",
       "key": "v-6bdfadb6",
-      "path": "/foo/two.html"
+      "path": "/foo/two.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
+    },
+    {
+      "title": "欢迎来到介绍页",
+      "frontmatter": {},
+      "regularPath": "/foo/",
+      "relativePath": "foo/README.md",
+      "key": "v-dcb768b0",
+      "path": "/foo/",
+      "lastUpdated": "2021/3/23 下午4:04:22"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/bar/four.html",
+      "relativePath": "bar/four.md",
+      "key": "v-4808392d",
+      "path": "/bar/four.html",
+      "lastUpdated": "2021/3/23 下午4:04:22"
     }
   ],
   "themeConfig": {
@@ -181,8 +190,6 @@ export const siteData = {
     "displayAllHeaders": false,
     "activeHeaderLinks": true,
     "lastUpdated": "最后更新时间",
-    "nextLinks": false,
-    "prevLinks": false,
     "repo": "pengqiang324/my-component",
     "repoLabel": "GitHub",
     "editLinks": false,

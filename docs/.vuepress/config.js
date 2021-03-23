@@ -109,9 +109,9 @@ module.exports = {
         // },
         lastUpdated: '最后更新时间', // 最后更新时间
         // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
-        nextLinks: false,
+        // nextLinks: false,
         // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
-        prevLinks: false,
+        // prevLinks: false,
         // Git 仓库和编辑链接
         repo: 'pengqiang324/my-component', // 你的仓库
         repoLabel: 'GitHub', // 导航栏上的文本
