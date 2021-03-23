@@ -9,21 +9,12 @@ export const siteData = {
     [
       "link",
       {
-        "rel": "icon",
-        "href": "/favicon.ico"
+        "rel": "shortcut icon",
+        "href": "favicon.ico"
       }
     ]
   ],
   "pages": [
-    {
-      "title": "关于我们",
-      "frontmatter": {},
-      "regularPath": "/about.html",
-      "relativePath": "about.md",
-      "key": "v-6c2ca5f2",
-      "path": "/about.html",
-      "lastUpdated": "2021/3/23 下午4:04:22"
-    },
     {
       "title": "Hello VuePress",
       "frontmatter": {},
@@ -43,6 +34,15 @@ export const siteData = {
           "slug": "_3级标题"
         }
       ],
+      "lastUpdated": "2021/3/23 下午4:52:14"
+    },
+    {
+      "title": "关于我们",
+      "frontmatter": {},
+      "regularPath": "/about.html",
+      "relativePath": "about.md",
+      "key": "v-6c2ca5f2",
+      "path": "/about.html",
       "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
@@ -55,10 +55,10 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/bar/three.html",
-      "relativePath": "bar/three.md",
-      "key": "v-15e8eaf6",
-      "path": "/bar/three.html",
+      "regularPath": "/bar/four.html",
+      "relativePath": "bar/four.md",
+      "key": "v-4808392d",
+      "path": "/bar/four.html",
       "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
@@ -71,20 +71,11 @@ export const siteData = {
       "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
-      "title": "这是介绍配置详情页面",
       "frontmatter": {},
-      "regularPath": "/foo/one.html",
-      "relativePath": "foo/one.md",
-      "key": "v-7d2b9536",
-      "path": "/foo/one.html",
-      "lastUpdated": "2021/3/23 下午4:04:22"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/foo/two.html",
-      "relativePath": "foo/two.md",
-      "key": "v-6bdfadb6",
-      "path": "/foo/two.html",
+      "regularPath": "/bar/three.html",
+      "relativePath": "bar/three.md",
+      "key": "v-15e8eaf6",
+      "path": "/bar/three.html",
       "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
@@ -97,11 +88,20 @@ export const siteData = {
       "lastUpdated": "2021/3/23 下午4:04:22"
     },
     {
+      "title": "这是介绍配置详情页面",
       "frontmatter": {},
-      "regularPath": "/bar/four.html",
-      "relativePath": "bar/four.md",
-      "key": "v-4808392d",
-      "path": "/bar/four.html",
+      "regularPath": "/foo/one.html",
+      "relativePath": "foo/one.md",
+      "key": "v-7d2b9536",
+      "path": "/foo/one.html",
+      "lastUpdated": "2021/3/23 下午4:09:51"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/foo/two.html",
+      "relativePath": "foo/two.md",
+      "key": "v-6bdfadb6",
+      "path": "/foo/two.html",
       "lastUpdated": "2021/3/23 下午4:04:22"
     }
   ],
@@ -191,8 +191,10 @@ export const siteData = {
     "activeHeaderLinks": true,
     "lastUpdated": "最后更新时间",
     "repo": "pengqiang324/my-component",
-    "repoLabel": "GitHub",
-    "editLinks": false,
+    "repoLabel": "远程地址",
+    "docsDir": "docs",
+    "docsBranch": "main",
+    "editLinks": true,
     "editLinkText": "编辑此页面"
   },
   "locales": {

@@ -2,10 +2,10 @@ module.exports = {
     title: "新宇文档",
     description: "生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。",
     base: '/', // 项目根路径
-    dest: '/dist/', // 打包后的文件夹路径，为了方便，我把 dist 文件夹放到了根目录上
+    dest: 'myApp', // 打包后的文件夹路径，为了方便，我把 dist 文件夹放到了根目录上
     // head 标签中的额外内容
     head: [
-      ['link', { rel: 'icon', href: '/favicon.ico' }] // 这个是标签页 logo
+      ['link', { rel: 'shortcut icon', href: 'favicon.ico' }] // 这个是标签页 logo
     ],
     // 语言配置
     locales: {
@@ -114,9 +114,13 @@ module.exports = {
         // prevLinks: false,
         // Git 仓库和编辑链接
         repo: 'pengqiang324/my-component', // 你的仓库
-        repoLabel: 'GitHub', // 导航栏上的文本
-
-        editLinks: false,
+        repoLabel: '远程地址', // 导航栏上的文本
+        // 假如你的文档仓库和项目本身不在一个仓库：
+        // docsRepo: 'pengqiang324/my-component',
+        // 假如文档不是放在仓库的根目录下：
+        docsDir: 'docs',
+        docsBranch: 'main',
+        editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '编辑此页面'
     }
