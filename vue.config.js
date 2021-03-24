@@ -30,7 +30,7 @@ module.exports = {
             .rule('eslint')
             .exclude.add(resolve('lib'))
             .end()
-            .exclude.add(resolve('examples/docs'))
+            .exclude.add(resolve('docs'))
             .end()
 
         // // 添加 packages 为webpack compiler

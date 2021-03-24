@@ -1,3 +1,9 @@
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
+
 module.exports = {
     title: "新宇文档",
     description: "生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。",
@@ -19,19 +25,7 @@ module.exports = {
     themeConfig: {
         // 顶部导航
         nav: [
-            { text: '首页', link: '/' },
-            { text: '归档', link: '/archives/'},
-            { text: '分类', link: '/categories/' },
-            { text: '标签', link: '/tags/' },
-            { text: '关于我', link: '/about/' },
-            {
-                text: 'Languages',
-                ariaLabel: 'Language Menu',
-                items: [
-                  { text: 'Chinese', link: '/language/chinese/' },
-                  { text: 'Japanese', link: '/language/japanese/' }
-                ]
-              }
+            { text: '首页', link: '/' }
         ],
         
         // 侧边栏
@@ -123,5 +117,17 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '编辑此页面'
-    }
+    },
+
+    markdown: {
+        lineNumbers: true // 是否显示行号
+    },
+
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@s': resolve('assets')
+            }
+        }
+    }    
   }
