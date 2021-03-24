@@ -5,7 +5,7 @@ function resolve(dir) {
 
 
 module.exports = {
-    title: "新宇文档",
+    title: "新宇摸鱼手册",
     description: "生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。",
     base: '/', // 项目根路径
     dest: 'myApp', // 打包后的文件夹路径，为了方便，我把 dist 文件夹放到了根目录上
@@ -25,11 +25,34 @@ module.exports = {
     themeConfig: {
         // 顶部导航
         nav: [
-            { text: '首页', link: '/' }
+            { text: '首页', link: '/' },
+            { text: '知识库', link: '/repository/' },
+            { text: '生活计划', link: '/life/' }
         ],
         
         // 侧边栏
         sidebar: {
+            '/repository/': [
+                {
+                    title: '知识库',
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        '',
+                        'source/source.md'
+                    ]
+                }
+            ],
+            '/life/': [
+                {
+                    title: '生活计划',
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        ''
+                    ]
+                }
+            ],
             '/foo/': [
                 {
                     title: '介绍详情',
@@ -120,13 +143,13 @@ module.exports = {
     },
 
     markdown: {
-        lineNumbers: true // 是否显示行号
+        lineNumbers: false // 是否显示行号
     },
 
     configureWebpack: {
         resolve: {
             alias: {
-                '@s': resolve('assets')
+                '@s': resolve('assets')  // 默认 .vuepress文件夹
             }
         }
     }    
