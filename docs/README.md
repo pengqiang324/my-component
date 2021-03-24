@@ -21,7 +21,7 @@
 <!-- <img :src="$withBase('/a.jpg')" alt="foo"> -->
 
 ::: tip
-这是一个tips
+这是我新修改的一个tips
 :::
 
 ``` js{4}
@@ -33,6 +33,8 @@ export default {
     }
 }
 ```
+
+##### 新增了一个测试
 
 ``` md
 md行
