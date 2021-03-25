@@ -19,6 +19,11 @@ module.exports = {
       // 作为特例，默认语言可以使用 '/' 作为其路径。
       '/': {
         lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+      },
+      '/guid': {
+        lang: 'en-US',
+        title: 'VuePress',
+        description: 'Vue-powered Static Site Generator'
       }
     },
 
@@ -26,8 +31,10 @@ module.exports = {
         // 顶部导航
         nav: [
             { text: '首页', link: '/' },
+            { text: '组件指南', link: '' },
             { text: '知识库', link: '/repository/' },
-            { text: '生活计划', link: '/life/' }
+            { text: '生活计划', link: '/life/' },
+            { text: '理财策略', link: '/en/' }
         ],
         
         // 侧边栏
@@ -76,6 +83,10 @@ module.exports = {
                 '',      /* /bar/ */
                 'three', /* /bar/three.html */
                 'four'   /* /bar/four.html */
+            ],
+
+            '/en/': [
+                ''
             ],
     
             // fallback
@@ -131,7 +142,7 @@ module.exports = {
         // prevLinks: false,
         // Git 仓库和编辑链接
         repo: 'pengqiang324/my-component', // 你的仓库
-        repoLabel: '远程地址', // 导航栏上的文本
+        repoLabel: 'GitHub', // 导航栏上的文本
         // 假如你的文档仓库和项目本身不在一个仓库：
         // docsRepo: 'pengqiang324/my-component',
         // 假如文档不是放在仓库的根目录下：
